@@ -68,11 +68,6 @@ frame_entrada = Frame(ventana_principal)
 frame_entrada.config(bg = "skyblue2", width = 480 , height = 200)
 frame_entrada.place(x = 10, y = 10)
 
-# Logo de la app
-#logo = PhotoImage(file = "img/logo-uis.png")
-#lb_logo = Label(frame_entrada, image = logo)
-#lb_logo.place(x = 61 , y = 61)
-
 # Etiquetas par el titulo de app
 titulo = Label(frame_entrada, text = "Comprobar si un numero es capicua")
 titulo.config(bg = "skyblue2", fg = "black", font = ("Arial",16))
@@ -97,9 +92,10 @@ frame_operaciones = Frame(ventana_principal)
 frame_operaciones.config(bg = "skyblue2", width = 480 , height = 120)
 frame_operaciones.place(x = 10, y = 220)
 
-# Boton para sumar
-bt_sumar = Button(frame_operaciones, text="Comprobar", command=comp)
-bt_sumar.place(x=45, y=45, width=100, height=30)
+# Boton de inicio
+logo = PhotoImage(file = "img/375.png")
+bt_comp = Button(frame_operaciones, text="comprobar", image=logo, command=comp)
+bt_comp.place(x = 45, y=45, width=100, height=30)
 
 #Boton borrar
 bt_sumar = Button(frame_operaciones, text="Borrar")
